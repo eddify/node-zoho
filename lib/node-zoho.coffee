@@ -16,6 +16,11 @@ class Zoho
     if options?.authToken
       @authToken = options?.authToken
 
+    if options?.wfTrigger
+      @wfTrigger = true;
+    else
+      @wfTrigger = false;
+
     return @
 
   getProduct: (productName) ->

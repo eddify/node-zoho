@@ -29,6 +29,7 @@ class CrmProduct extends BaseProduct
       query: {
         authtoken: @zoho.authToken
         scope: @getScope()
+        wfTrigger: @zoho.wfTrigger
       }
       path: [ @name ]
     }
